@@ -31,8 +31,7 @@ for row in range(len(lines)):
             sum += int(curNum)
         curNum = ""
         validNum = False
-        
-print()
+
 print(sum)
 
 gears = {}
@@ -83,7 +82,4 @@ for gear in gears:
         print(xs[0], xs[1])
 
 
-print(gears)
-
-print()
 print(sum)

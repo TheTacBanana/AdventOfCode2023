@@ -69,7 +69,6 @@ for line in str_in.splitlines():
         print(t, int_max_t[t])
         if (int_max_t[t] != 0):
             mul *= int_max_t[t]
-    print(mul)
     power_total += mul
 
 print(count)
