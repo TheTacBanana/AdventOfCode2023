@@ -14,12 +14,9 @@ for line in lines:
 
     for (bottom, top) in zip(differences[-1][::-1][:-1], differences[-1][::-1][1:]):
         top.append(top[-1] + bottom[-1])
-
-    for (bottom, top) in zip(differences[-1][::-1][:-1], differences[-1][::-1][1:]):
         top.insert(0, top[0] - bottom[0])
 
 s = sum([*map(lambda x:x[0][-1], differences)])
 print(s)
-
 s = sum([*map(lambda x:x[0][0], differences)])
 print(s)
