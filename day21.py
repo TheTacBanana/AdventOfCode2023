@@ -13,12 +13,6 @@ for r, row in enumerate(grid):
 width = len(grid[0])
 height = len(grid)
 
-from functools import cache
-@cache
-def adjacent(pos):
-    px, py = pos
-    return 
-
 goal = 26501365
 
 x = []
@@ -35,11 +29,10 @@ for i in range(1,1000):
             if grid[ny % height][nx % width] != "#":
                 new_on.add((nx, ny))
     currently_on = new_on
-    
+
     if i == 64:
         print(len(currently_on))
     if i % height == goal % height:
-        print(i, len(currently_on))
         x.append(i)
         y.append(len(currently_on))
         if len(x) == 3:
